@@ -23,8 +23,11 @@
 
 //CODE HERE
 
+const greetUser = username => {
+    return (`Welcome back, ${username}`)
+}
 
-
+// console.log(greetUser('Cade'))
 
 
 //////////////////PROBLEM 2////////////////////
@@ -51,8 +54,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
-
-
+function canWeDeliver(zipCode){
+    for ( let i = 0; i < deliveryAreaZipCodes.length; i++){
+        if (zipCode = deliveryAreaZipCodes[i]) {
+        return console.log(`You're in our delivery zone!`)
+    }else {
+         return console.log(`Sorry, we can't deliver to that address`)
+        }
+    }
+}
+canWeDeliver(85203)
 /* 
     Problem 2 Continued
 
@@ -72,7 +83,15 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+function canWeDeliverTwo(zipcode) {
+    if (deliveryAreaZipCodes.includes(zipcode) === true){
+       return console.log(`You're in our delivery zone!`)
+    } else {
+        return console.log(`Sorry, we can't deliver to that address`)
+    }
+}
 
+canWeDeliverTwo(86205)
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -107,7 +126,6 @@ const deals = [
 */
 
 //CODE HERE
-
 
 
 /*
