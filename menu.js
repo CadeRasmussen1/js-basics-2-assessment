@@ -32,7 +32,16 @@
 
 //CODE HERE
 
+const pizza = {
+    name: 'cade',
+    price: 10,
+    category: 'entree/dessert',
+    popularity: 7,
+    rating: 8,
+    tags: ['friendly', 'large']
 
+
+}
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -44,6 +53,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -54,6 +64,7 @@
 
 //CODE HERE
 
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -64,7 +75,10 @@
 
 //CODE HERE
 
+let {price} = pizza
 
+
+console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -74,6 +88,9 @@
 
 //CODE HERE
 
+let {category} = pizza
+
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,6 +105,51 @@
 */
 
 //CODE HERE
+
+let foodArr = [
+    {
+    name: 'Ice Cream',
+    price: 6,
+    category: 'dessert',
+    popularity: 10,
+    rating: 6,
+    tags: ['delicious', 'sweet']
+    },
+    {
+    name: 'garlic bread',
+    price: 9,
+    category: 'appitizer',
+    popularity: 6,
+    rating: 7,
+    tags: ['small', 'salty']
+    
+    },
+    {
+    name: 'Pepperoni',
+    price: 10,
+    category: 'entree',
+    popularity: 7,
+    rating: 8,
+    tags: ['large', 'greasy']
+    },
+    {
+    name: '3 meat',
+    price: 13,
+    category: 'entree',
+    popularity: 8,
+    rating: 9,
+    tags: ['salty', 'heavy']
+    },
+    {
+    name: 'cheese',
+    price: 6,
+    category: 'entree',
+    popularity: 9,
+    rating: 10,
+    tags: ['vegan']
+    }
+]
+
 
 
 
@@ -105,7 +167,8 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+    const filteredFood = foodArr.filter()
+
 
 
 
